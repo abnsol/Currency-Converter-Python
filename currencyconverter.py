@@ -1,4 +1,3 @@
-# BEFORE RUNNING THIS PROGRAM CHECK THE VIDEO ON THE LINK ON LINE 16(below)
 print()                                                                                              # we used print() through out the proram to make the interface look good thats all
 print('For the inputs please only use formal currency abreviations')
 print()
