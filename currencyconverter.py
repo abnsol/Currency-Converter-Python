@@ -1,4 +1,4 @@
-print()                                                                                              # we used print() through out the proram to make the interface look good thats all
+print()                                                                                              # i used print() through out the proram to make the interface look good thats all
 print('For the inputs please only use formal currency abreviations')
 print()
 k=str(input("""Do you like to convert your currency using stored exchange rate or live exchange rate?
@@ -6,7 +6,7 @@ k=str(input("""Do you like to convert your currency using stored exchange rate o
 k=k.lower()
 print()
 
-# THE NEXT FUNCTION WE BUILT WILL FETCH LIVE EXCHANGE RATES FROM RAPID API, WE USED THAT EXCHANGE RATE TO CONVERT OUR CURRENCIES
+# THE NEXT FUNCTION I BUILT WILL FETCH LIVE EXCHANGE RATES FROM RAPID API, I USED THAT EXCHANGE RATE TO CONVERT OUR CURRENCIES
 if k=='live':
     print("""#DEPENDENCY 
         To have online exchange rates you have to download a request library and have internet access.
@@ -38,10 +38,10 @@ if k=='live':
         exit()                                                                                       # stop running this file
     
     def every_currency(x,y,z):
-        #we used RapidAPI to get our live exchange rates.
-        Ex_rate_fetch_link = "https://currency-conversion-and-exchange-rates.p.rapidapi.com/latest"  # the link where we get our exchange rates from
+        #I used RapidAPI to get our live exchange rates.
+        Ex_rate_fetch_link = "https://currency-conversion-and-exchange-rates.p.rapidapi.com/latest"  # the link where i get our exchange rates from
         #from line 44-48 the code is provided by the rapidAPI website to satisfy its input
-        p = {'base':x}                                                                               # required by the api to show the base currency from which we convert 
+        p = {'base':x}                                                                               # required by the api to show the base currency from which i convert 
         headers = { "X-RapidAPI-Key": "c87d5b1b4cmsh69c1cf3ed13b35fp1c3445jsn3ead3d585a5d",          # contains an info required by the api(subscription info)                            
                     "X-RapidAPI-Host": "currency-conversion-and-exchange-rates.p.rapidapi.com" }                                                
         ex_rates_data1 = requests.get(Ex_rate_fetch_link, headers=headers, params=p)                 # fetches all exchange rate datas from website
